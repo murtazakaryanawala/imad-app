@@ -21,5 +21,15 @@
         
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         
+        <script>
+            $(document).ready(function(){
+               var counter=0;
+                $('.btn').click(function(){
+                    counter = counter + 1;
+                    $('.count').html('counter');
+                }); 
+            });
+        </script>
+        
     </body>
 </html>
