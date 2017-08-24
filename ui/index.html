@@ -30,7 +30,7 @@
                        success: function(){
                            if(request.status === 200){
                                var counter = request.responseText;
-                                $('#count').html(counter);
+                                $('#count').html(counter.toString());
                            }
                        };
                     });
