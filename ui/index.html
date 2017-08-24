@@ -28,8 +28,12 @@
                     $.ajax({
                        type: 'GET',
                        success: function(){
-                           
-                       }
+                           if(request.status === 200){
+                               var counter = request.responseText;
+                               var spann = $('#count');
+                               span.html(counter);
+                           }
+                       };
                     });
                     counter = counter + 1;
                     $('#count').html(counter);
