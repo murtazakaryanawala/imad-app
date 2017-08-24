@@ -25,6 +25,12 @@
             $(document).ready(function(){
                var counter=0;
                 $('#btn').click(function(){
+                    $.ajax({
+                       type: 'GET',
+                       success: function(){
+                           
+                       }
+                    });
                     counter = counter + 1;
                     $('#count').html(counter);
                 }); 
