@@ -22,22 +22,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         
         <script>
-            $(document).ready(function(){
-               var counter=0;
-                $('#btn').click(function(){
-                    $.ajax({
-                       type: 'GET',
-                       success: function(){
-                           if(request.status === 200){
-                               var counter = request.responseText;
-                               $('#count').html(counter.toString());
-                           };
-                       }
-                    });
-                    request.open('GET', 'http://murtaza.imad.hasura-app.io/counter', true);
-                    request.send(null);
-                }); 
-            });
+        
         </script>
         
     </body>
