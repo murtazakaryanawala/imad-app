@@ -15,5 +15,5 @@ button.onclick = function(){
 var counter=0;
 $('.btn').click(function(){
     counter = counter + 1;
-    $('.count').html('counter')
-})
+    $('.count').html('counter');
+});
