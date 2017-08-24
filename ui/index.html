@@ -25,15 +25,8 @@
             $(document).ready(function(){
                var counter=0;
                 $('#btn').click(function(){
-                    $.ajax({
-                       type: 'GET',
-                       success: function(){
-                           if(request.status === 200){
-                               var counter = request.responseText;
-                                $('#count').html(counter.toString());
-                           }
-                       };
-                    });
+                    counter = counter + 1;
+                    $('#count').html(counter);
                 }); 
             });
         </script>
