@@ -24,7 +24,7 @@
         <script>
             console.log('Loaded!');
 
-            var button = document.getElementById('btn');
+            var button = document.getElementById("btn");
             
             button.onclick = function(){
                 //Create a request object
@@ -36,7 +36,7 @@
                         //TAke some action
                         if(request.status === 200){
                             var counter = request.responseText;
-                            var span = document.getElementById('count');
+                            var span = document.getElementById("count");
                             span.innerHtml = counter.toString();
                         }
                     }
